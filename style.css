@@ -9,8 +9,8 @@ a:hover {
 }
 
 #logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  padding-left: 20px;
+  width: 22%;
 }
 
 #header {
@@ -163,4 +163,17 @@ html {
   font-size: 24px;
   color: #8B8585;
   margin: 35px 0;
+}
+
+#imagemsacola {
+  width: 70%;
+  padding-top: 10px;
+}
+
+#imagemsacola2 {
+  padding-top: 10px;
+}
+
+#imagemsobre {
+  width: 100%;
 }
