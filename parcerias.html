@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>💸 CashBag | Parcerias</title>
+		<link rel="stylesheet" href="./style.css">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="./cashbag_files/main.css">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/animation.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="manifest" href="manifest.json">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="msapplication-TileImage" content="assets\logo\144.png">
+		<meta name="msapplication-TileColor" content="#31506F">
+		<meta name="theme-color" content="#4D5360" />
+		<link rel="shortcut icon" sizes="128x128" href="assets\logo\128.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="CashBag">
+		<link rel="apple-touch-icon" href="assets\logo\144.png">
+		<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets\logo\152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets\logo\180.png">
+		<link rel="apple-touch-icon" sizes="167x167" href="assets\logo\167.png">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+	</head>
+	<body class="">
+		<!-- Menu -->
+		<header id="header">
+			<a id="logo" href="index.html">CashBag</a>
+			<nav id="nav">
+			  <button aria-label="Abrir Menu" id="buttom-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><span id="hamburger"></span>
+			  </button>
+			  <ul id="menu" role="menu">
+				<li><a href="disponibilidade.html">Disponibilidade</a></li>
+				<li><a href="parcerias.html">Parcerias</a></li>
+				<li><a href="contatos.html">Contato</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+			  </ul>
+			</nav>
+		  </header>
+		  <script src="./scriptmenu.js"></script>
+    <body class="">
+        <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in is-inactive" id="first">
+            <div class="content">
+                <h2>Quem são nossos parceiros?</h2>
+                <p>Desde de atacados a mercadinhos de bairro, todos que possuem interesse em mudar o mundo!</p>
+            </div>
+            <div>
+                <img src="./cashbag_files/cashbag_compress/7.jpg" alt="">
+            </div>
+        <script src="./cashbag_files/jquery.min.js.download"></script>
+			<script src="./cashbag_files/jquery.scrollex.min.js.download"></script>
+			<script src="./cashbag_files/jquery.scrolly.min.js.download"></script>
+			<script src="./cashbag_files/browser.min.js.download"></script>
+			<script src="./cashbag_files/breakpoints.min.js.download"></script>
+			<script src="./cashbag_files/util.js.download"></script>
+			<script src="./cashbag_files/main.js.download"></script>
+			<script src="script.js"></script>
+			<script>
+				let newWorker;
+			
+				if ('serviceWorker' in navigator) {
+				  navigator.serviceWorker.register('/service-worker.js').then(reg => {
+					reg.addEventListener('updatefound', () => {
+					  // A wild service worker has appeared in reg.installing!
+					  newWorker = reg.installing;
+					  newWorker.addEventListener('statechange', () => {
+						// Has network.state changed?
+
+					  });
+					});
+				  });
+				  let refreshing;
+				  navigator.serviceWorker.addEventListener('controllerchange', function () {
+					if (refreshing) return;
+					window.location.reload();
+					refreshing = true;
+				  });
+				}
+			  </script>
+	
+    </body>
+</html>

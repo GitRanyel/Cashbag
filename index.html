@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>💸 CashBag | Página Inicial</title>
+		<link rel="stylesheet" href="./style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="./cashbag_files/main.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="manifest" href="manifest.json">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="msapplication-TileImage" content="assets\logo\144.png">
+		<meta name="msapplication-TileColor" content="#31506F">
+		<meta name="theme-color" content="#4D5360" />
+		<link rel="shortcut icon" sizes="128x128" href="assets\logo\128.png">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="CashBag">
+		<link rel="apple-touch-icon" href="assets\logo\144.png">
+		<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets\logo\152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets\logo\180.png">
+		<link rel="apple-touch-icon" sizes="167x167" href="assets\logo\167.png">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+	</head>
+	<body class="">
+		<main>
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>Ganhe dinheiro com sua sacolinha!</h1>
+							<p class="major">Uma maneira de ajudar o planeta e ainda ganhar por isso!</p>
+							<ul class="actions stacked">
+								<li><a href="login.html" class="button big wide smooth-scroll-middle">Saiba Mais</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="./cashbag_files/cashbag_compress/1.jpg" id="imagem1" alt="Pessoas apertando as mãos">
+						</div>
+					</section>
+		<!-- Scripts -->
+			<script src="./cashbag_files/jquery.min.js.download"></script>
+			<script src="./cashbag_files/jquery.scrollex.min.js.download"></script>
+			<script src="./cashbag_files/jquery.scrolly.min.js.download"></script>
+			<script src="./cashbag_files/browser.min.js.download"></script>
+			<script src="./cashbag_files/breakpoints.min.js.download"></script>
+			<script src="./cashbag_files/util.js.download"></script>
+			<script src="./cashbag_files/main.js.download"></script>
+			<script src="script.js"></script>
+			<script>
+				let newWorker;
+			
+				if ('serviceWorker' in navigator) {
+				  navigator.serviceWorker.register('/service-worker.js').then(reg => {
+					  // A wild service worker has appeared in reg.installing!
+					  reg.addEventListener('updatefound', () => {
+					  newWorker = reg.installing;
+					  newWorker.addEventListener('statechange', () => {
+						// Has network.state changed?
+
+					  });
+					});
+				  });
+				  let refreshing;
+				  navigator.serviceWorker.addEventListener('controllerchange', function () {
+					if (refreshing) return;
+					window.location.reload();
+					refreshing = true;
+				  });
+				}
+			</script>
+		</main>
+	</body>
+</html>
